@@ -1,60 +1,139 @@
-# OpenCode
+# Mastering Crawl4AI: AI-Powered Web Crawling and Data Extraction
 
-OpenCode is an AI-powered coding assistant that helps developers with software engineering tasks through an interactive command-line interface.
+A comprehensive curriculum for building production-ready web crawling solutions with Crawl4AI.
 
-## Overview
+[![Course Status](https://img.shields.io/badge/status-in%20development-blue)](./modules)
+[![Python Version](https://img.shields.io/badge/python-3.12%2B-green)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 
-OpenCode provides intelligent assistance for software development tasks including:
-- Bug fixing and code debugging
-- Feature implementation and refactoring
-- Code explanation and documentation
-- Testing and quality assurance
-- Project setup and configuration guidance
+## Description
 
-## Key Features
+Crawl4AI is an AI-optimized web crawler that outputs LLM-ready content. This course takes you from fundamentals to production deployment, covering everything from basic crawling to MCP server integration with AI assistants.
 
-- **Intelligent Code Assistance**: Leverages advanced AI models to understand and generate code
-- **Interactive CLI**: Provides a conversational interface for coding tasks
-- **Multi-tool Support**: Integrates with bash, file system operations, and development workflows
-- **Context-Aware**: Understands codebase structure and conventions to provide relevant suggestions
-- **Security Focused**: Includes permission controls to protect sensitive files and operations
+## Course Overview
 
-## Configuration
+| Property | Value |
+|----------|-------|
+| **Total Duration** | 44-50 hours |
+| **Modules** | 14 modules |
+| **Instructional Content** | 25-30 hours |
+| **Hands-on Practice** | 15-20 hours |
+| **Capstone Project** | 4-6 hours |
 
-The repository includes configuration files that define:
-- Permission controls for file access, editing, and bash commands (`opencode.json`)
-- Behavioral guidelines for AI coding assistance (`AGENTS.md`)
-- Frontend design skills for creating distinctive user interfaces
+## Prerequisites
+
+- Python 3.12+ knowledge
+- Basic understanding of web concepts (HTML, CSS, HTTP)
+- Familiarity with async/await concepts (helpful but not required)
+
+## Target Audience
+
+- Developers familiar with Python basics
+- Data engineers and AI practitioners
+- Anyone interested in web scraping for LLM applications
+
+## Quick Navigation
+
+- [Module 01: Introduction to Crawl4AI](./modules/module-01-introduction.md)
+- [Module 02: Installation and Setup](./modules/module-02-installation.md)
+- [Module 03: Basic Crawling Fundamentals](./modules/module-03-basic-crawling.md)
+- [Module 04: Configuration Deep Dive](./modules/module-04-configuration.md)
+- [Module 05: Data Extraction Strategies](./modules/module-05-data-extraction.md)
+- [Module 06: Advanced Crawling Features](./modules/module-06-advanced-features.md)
+- [Module 07: Performance and Optimization](./modules/module-07-performance.md)
+- [Module 08: Hooks and Pipeline Customization](./modules/module-08-hooks.md)
+- [Module 09: Multi-Page and Deep Crawling](./modules/module-09-deep-crawling.md)
+- [Module 10: Integration with AI Systems](./modules/module-10-ai-integration.md)
+- [Module 11: Deployment and Production](./modules/module-11-deployment.md)
+- [Module 12: Real-World Projects](./modules/module-12-projects.md)
+- [Module 13: Troubleshooting and Best Practices](./modules/module-13-troubleshooting.md)
+- [Module 14: Contributing to Crawl4AI](./modules/module-14-contributing.md)
+
+## Learning Path
+
+```
+Module 01-02: Foundation (Setup & Basics)
+        ↓
+Module 03-05: Core Skills (Crawling & Extraction)
+        ↓
+Module 06-09: Advanced Techniques (Deep Crawling & Optimization)
+        ↓
+Module 10-11: Production (AI Integration & Deployment)
+        ↓
+Module 12-14: Mastery (Projects, Troubleshooting & Contribution)
+```
+
+## Installation
+
+### Using uv (Recommended)
+
+```bash
+# Create a new project
+uv init crawl4ai-course
+cd crawl4ai-course
+
+# Install Crawl4AI with all dependencies
+uv add crawl4ai
+
+# Install Playwright browsers
+playwright install chromium
+
+# Verify installation
+crawl4ai-doctor
+```
+
+### Using conda
+
+```bash
+# Create a new environment
+conda create -n crawl4ai python=3.12
+conda activate crawl4ai
+
+# Install Crawl4AI
+pip install crawl4ai
+
+# Install Playwright browsers
+playwright install chromium
+
+# Verify installation
+crawl4ai-doctor
+```
+
+### Docker
+
+```bash
+# Pull pre-built image
+docker pull uncornai/crawl4ai:latest
+
+# Run with volume mounting
+docker run -v $(pwd):/workspace -p 8000:8000 uncornai/crawl4ai:latest
+```
+
+For detailed installation instructions, see [Module 02: Installation and Setup](./modules/module-02-installation.md).
 
 ## Getting Started
 
-1. Install dependencies:
-   ```bash
-   npm install @opencode-ai/plugin
-   ```
+Begin with Module 01 to understand what Crawl4AI is and how it differs from traditional web scraping tools:
 
-2. Configure permissions in `opencode.json` according to your security requirements
+- [Start Module 01](./modules/module-01-introduction.md)
 
-3. Run OpenCode to start interacting with the AI coding assistant
+## Required Resources
 
-## Security
+- Crawl4AI documentation ([official docs](https://docs.crawl4ai.com/))
+- LLM API access (OpenAI, Anthropic, Ollama, Azure OpenAI)
+- Docker Desktop for containerization sections
+- MCP-compatible AI assistant (Claude Desktop, Cursor, or OpenCode)
 
-OpenCode includes granular permission controls to ensure safe operation:
-- File read/write permissions with specific allow/deny patterns
-- Controlled bash command execution with predefined rules
-- External directory access restrictions
-- Web access controls
+## Assessment Overview
 
-These controls help prevent unauthorized access to sensitive files and system resources.
-
-## Contributing
-
-Contributions are welcome! Please read our guidelines in `AGENTS.md` which outline our approach to:
-- Thoughtful coding practices
-- Simplicity in implementation
-- Surgical changes to codebases
-- Goal-driven execution
+| Component | Weight | Description |
+|-----------|--------|-------------|
+| Weekly Quizzes | 20% | Conceptual understanding tests |
+| Lab Completion | 30% | Hands-on exercise verification |
+| Capstone Project | 35% | Functionality, code quality, documentation |
+| Peer Reviews | 10% | Code review participation |
+| Course Feedback | 5% | Final survey |
 
 ## License
 
-This project is licensed under the terms specified in the LICENSE file.
+This course material is available under the MIT License. See [LICENSE](LICENSE) for details.
