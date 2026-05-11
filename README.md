@@ -51,17 +51,38 @@ Crawl4AI is an AI-optimized web crawler that outputs LLM-ready content. This cou
 
 ## Learning Path
 
+```mermaid
+flowchart LR
+    subgraph Foundation["<b>🎯 Foundation</b><br/>Modules 1-2 | 3.5h"]
+        F1["Setup & Basics"]
+    end
+
+    subgraph Core["<b>⚡ Core Skills</b><br/>Modules 3-5 | 7.5h"]
+        C1["Crawling & Extraction"]
+    end
+
+    subgraph Advanced["<b>🚀 Advanced</b><br/>Modules 6-9 | 9h"]
+        A1["Deep Crawling & Optimization"]
+    end
+
+    subgraph Production["<b>🏭 Production</b><br/>Modules 10-11 | 4.5h"]
+        P1["AI Integration & Deployment"]
+    end
+
+    subgraph Mastery["<b>⭐ Mastery</b><br/>Modules 12-14 | 9h"]
+        M1["Projects, Troubleshooting & Contribution"]
+    end
+
+    F1 --> C1 --> A1 --> P1 --> M1
+
+    style Foundation fill:#e3f2fd
+    style Core fill:#fff3e0
+    style Advanced fill:#f3e5f5
+    style Production fill:#e8f5e9
+    style Mastery fill:#fce4ec
 ```
-Module 01-02: Foundation (Setup & Basics)
-        ↓
-Module 03-05: Core Skills (Crawling & Extraction)
-        ↓
-Module 06-09: Advanced Techniques (Deep Crawling & Optimization)
-        ↓
-Module 10-11: Production (AI Integration & Deployment)
-        ↓
-Module 12-14: Mastery (Projects, Troubleshooting & Contribution)
-```
+
+**Progression:** Foundation → Core Skills → Advanced → Production → Mastery
 
 ## Installation
 
