@@ -1,4 +1,4 @@
-name: crawl4i-py312
+name: crawl4ai-py312
 channels:
   - conda-forge
   - defaults
