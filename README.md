@@ -52,37 +52,33 @@ Crawl4AI is an AI-optimized web crawler that outputs LLM-ready content. This cou
 ## Learning Path
 
 ```mermaid
-flowchart LR
-    subgraph Foundation["<b>🎯 Foundation</b><br/>Modules 1-2 | 3.5h"]
-        F1["Setup & Basics"]
-    end
+flowchart TD
+    F1["[F] Foundation"]
+    F2["Modules 01-02<br/>Setup & Basics - 3.5h"]
 
-    subgraph Core["<b>⚡ Core Skills</b><br/>Modules 3-5 | 7.5h"]
-        C1["Crawling & Extraction"]
-    end
+    C1["[C] Core Skills"]
+    C2["Modules 03-05<br/>Crawling & Extraction - 7.5h"]
 
-    subgraph Advanced["<b>🚀 Advanced</b><br/>Modules 6-9 | 9h"]
-        A1["Deep Crawling & Optimization"]
-    end
+    A1["[A] Advanced"]
+    A2["Modules 06-09<br/>Deep Crawling & Optimization - 9h"]
 
-    subgraph Production["<b>🏭 Production</b><br/>Modules 10-11 | 4.5h"]
-        P1["AI Integration & Deployment"]
-    end
+    P1["[P] Production"]
+    P2["Modules 10-11<br/>AI Integration & Deployment - 4.5h"]
 
-    subgraph Mastery["<b>⭐ Mastery</b><br/>Modules 12-14 | 9h"]
-        M1["Projects, Troubleshooting & Contribution"]
-    end
+    M1["[M] Mastery"]
+    M2["Modules 12-14<br/>Projects, Troubleshooting & Contribution - 9h"]
 
-    F1 --> C1 --> A1 --> P1 --> M1
+    F1 --> C1
+    C1 --> A1
+    A1 --> P1
+    P1 --> M1
 
-    style Foundation fill:#e3f2fd
-    style Core fill:#fff3e0
-    style Advanced fill:#f3e5f5
-    style Production fill:#e8f5e9
-    style Mastery fill:#fce4ec
+    F1 -.- F2
+    C1 -.- C2
+    A1 -.- A2
+    P1 -.- P2
+    M1 -.- M2
 ```
-
-**Progression:** Foundation → Core Skills → Advanced → Production → Mastery
 
 ## Installation
 
