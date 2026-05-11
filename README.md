@@ -102,12 +102,11 @@ crawl4ai-doctor
 ### Using conda
 
 ```bash
-# Create a new environment
-conda create -n crawl4ai python=3.12
-conda activate crawl4ai
+# Create the environment from environment.yaml
+conda env create -f environment.yaml
 
-# Install Crawl4AI
-pip install crawl4ai
+# Activate the environment
+conda activate crawl4i-py312
 
 # Install Playwright browsers
 playwright install chromium
