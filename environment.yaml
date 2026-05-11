@@ -1,0 +1,15 @@
+name: crawl4i-py312
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - requests
+  - lxml
+  - pip:
+    - crawl4ai
+    - playwright
+    - openai
+    - ollama
+    - docker
