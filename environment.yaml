@@ -7,9 +7,10 @@ dependencies:
   - pip
   - requests
   - lxml
-  - pip:
-    - crawl4ai
-    - playwright
-    - openai
-    - ollama
-    - docker
+- pip:
+  - crawl4ai
+  - playwright
+  - openai
+  - ollama
+  - docker
+  - python-dotenv
