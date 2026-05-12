@@ -34,20 +34,20 @@ Crawl4AI is an AI-optimized web crawler that outputs LLM-ready content. This cou
 
 ## Quick Navigation
 
-- [Module 01: Introduction to Crawl4AI](./modules/module-01-introduction.md)
-- [Module 02: Installation and Setup](./modules/module-02-installation.md)
-- [Module 03: Basic Crawling Fundamentals](./modules/module-03-basic-crawling.md)
-- [Module 04: Configuration Deep Dive](./modules/module-04-configuration.md)
-- [Module 05: Data Extraction Strategies](./modules/module-05-data-extraction.md)
-- [Module 06: Advanced Crawling Features](./modules/module-06-advanced-features.md)
-- [Module 07: Performance and Optimization](./modules/module-07-performance.md)
-- [Module 08: Hooks and Pipeline Customization](./modules/module-08-hooks.md)
-- [Module 09: Multi-Page and Deep Crawling](./modules/module-09-deep-crawling.md)
-- [Module 10: Integration with AI Systems](./modules/module-10-ai-integration.md)
-- [Module 11: Deployment and Production](./modules/module-11-deployment.md)
-- [Module 12: Real-World Projects](./modules/module-12-projects.md)
-- [Module 13: Troubleshooting and Best Practices](./modules/module-13-troubleshooting.md)
-- [Module 14: Contributing to Crawl4AI](./modules/module-14-contributing.md)
+- [Module 01: Introduction to Crawl4AI](./markdown/module-01-introduction.md)
+- [Module 02: Installation and Setup](./markdown/module-02-installation.md)
+- [Module 03: Basic Crawling Fundamentals](./markdown/module-03-basic-crawling.md)
+- [Module 04: Configuration Deep Dive](./markdown/module-04-configuration.md)
+- [Module 05: Data Extraction Strategies](./markdown/module-05-data-extraction.md)
+- [Module 06: Advanced Crawling Features](./markdown/module-06-advanced-features.md)
+- [Module 07: Performance and Optimization](./markdown/module-07-performance.md)
+- [Module 08: Hooks and Pipeline Customization](./markdown/module-08-hooks.md)
+- [Module 09: Multi-Page and Deep Crawling](./markdown/module-09-deep-crawling.md)
+- [Module 10: Integration with AI Systems](./markdown/module-10-ai-integration.md)
+- [Module 11: Deployment and Production](./markdown/module-11-deployment.md)
+- [Module 12: Real-World Projects](./markdown/module-12-projects.md)
+- [Module 13: Troubleshooting and Best Practices](./markdown/module-13-troubleshooting.md)
+- [Module 14: Contributing to Crawl4AI](./markdown/module-14-contributing.md)
 
 ## Learning Path
 
@@ -125,13 +125,13 @@ docker pull uncornai/crawl4ai:latest
 docker run -v $(pwd):/workspace -p 8000:8000 uncornai/crawl4ai:latest
 ```
 
-For detailed installation instructions, see [Module 02: Installation and Setup](./modules/module-02-installation.md).
+For detailed installation instructions, see [Module 02: Installation and Setup](./markdown/module-02-installation.md).
 
 ## Getting Started
 
 Begin with Module 01 to understand what Crawl4AI is and how it differs from traditional web scraping tools:
 
-- [Start Module 01](./modules/module-01-introduction.md)
+- [Start Module 01](./markdown/module-01-introduction.md)
 
 ## Required Resources
 
