@@ -1,4 +1,4 @@
-# Mastering Crawl4AI: AI-Powered Web Crawling and Data Extraction
+# Mastering Crawl4AI: AI-Powered Web Crawling
 
 A comprehensive curriculum for building production-ready web crawling solutions with Crawl4AI.
 
