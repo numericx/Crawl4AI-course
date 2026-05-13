@@ -19,6 +19,7 @@ Crawl4AI is an AI-optimized web crawler that outputs LLM-ready content. This cou
 | **Instructional Content** | 25-30 hours |
 | **Hands-on Practice** | 15-20 hours |
 | **Capstone Project** | 4-6 hours |
+| **Status** | Module 01 Complete ✅ |
 
 ## Prerequisites
 
@@ -34,7 +35,12 @@ Crawl4AI is an AI-optimized web crawler that outputs LLM-ready content. This cou
 
 ## Quick Navigation
 
-- [Module 01: Introduction to Crawl4AI](./markdown/module-01-introduction.md)
+### Completed Modules
+- ✅ **Module 01: Introduction to Crawl4AI** - History, fundamentals, and core concepts with working code examples
+  - [Module Content](./markdown/module-01-introduction.md)
+  - [Code Examples](./src/module01/)
+
+### Modules In Development
 - [Module 02: Installation and Setup](./markdown/module-02-installation.md)
 - [Module 03: Basic Crawling Fundamentals](./markdown/module-03-basic-crawling.md)
 - [Module 04: Configuration Deep Dive](./markdown/module-04-configuration.md)
@@ -133,12 +139,138 @@ Begin with Module 01 to understand what Crawl4AI is and how it differs from trad
 
 - [Start Module 01](./markdown/module-01-introduction.md)
 
+### Module 01: What's New
+
+Module 01 has been updated with comprehensive hands-on code examples covering:
+
+1. **Basic Web Crawling** - Your first Crawl4AI crawler
+2. **Async/Await Pattern** - Understanding Python async in Crawl4AI
+3. **Context Managers** - Proper resource management
+4. **CrawlResult Structure** - Working with crawl output
+
+Each concept includes working Python code examples located in `src/module01/` that use the official practice websites:
+- `https://www.scrapethissite.com/` - Beginner-friendly practice site
+- `https://books.toscrape.com/` - E-commerce simulation
+- `https://web-scraping.dev/` - Advanced testing ground
+
+To run the examples:
+```bash
+# Test Module 01 code examples
+python src/module01/concept_01_what_is_crawling.py
+python src/module01/concept_02_async_await_pattern.py
+python src/module01/concept_03_context_managers.py
+python src/module01/concept_04_crawl_result.py
+```
+
 ## Required Resources
 
 - Crawl4AI documentation ([official docs](https://docs.crawl4ai.com/))
 - LLM API access (OpenAI, Anthropic, Ollama, Azure OpenAI)
 - Docker Desktop for containerization sections
 - MCP-compatible AI assistant (Claude Desktop, Cursor, or OpenCode)
+
+## Code Examples
+
+Each module includes working Python code examples that follow these principles:
+
+- **Python 3.12+** - Modern syntax and type hints
+- **Best Practices** - Docstrings, clean structure, comprehensive comments
+- **Practice Websites** - Uses official course practice sites
+- **Tested** - All examples verified to work correctly
+- **Educational** - Explains the "why" behind each concept
+
+### Module 01 Code Examples
+
+Located in `src/module01/`:
+
+| File | Description | Practice Site |
+|------|-------------|---------------|
+| `concept_01_what_is_crawling.py` | Basic web crawling demonstration | scrapethissite.com |
+| `concept_02_async_await_pattern.py` | Async/await pattern with Crawl4AI | books.toscrape.com |
+| `concept_03_context_managers.py` | Context manager usage | books.toscrape.com, scrapethissite.com |
+| `concept_04_crawl_result.py` | CrawlResult structure deep-dive | web-scraping.dev |
+
+All examples can be run directly:
+```bash
+python src/module01/concept_01_what_is_crawling.py
+```
+
+## Utilities
+
+The `src/utilities/` directory contains debugging and inspection utilities to help you understand Crawl4AI's behavior and output structure.
+
+### Available Utilities
+
+#### 1. inspect_links.py
+Inspect the structure of links extracted by Crawl4AI.
+
+**Purpose:** Understand how Crawl4AI categorizes and structures links (internal vs external).
+
+**Usage:**
+```bash
+python src/utilities/inspect_links.py
+```
+
+**Example Output:**
+```
+============================================================
+Link Inspection Results for: https://example.com
+============================================================
+Type: dict
+Is Dictionary: True
+Keys: ['internal', 'external']
+
+Link Counts:
+  Internal links: 0
+  External links: 1
+
+Example External Link:
+  URL: https://iana.org/domains/example
+  Text: Learn more
+============================================================
+```
+
+#### 2. inspect_attributes.py
+Inspect all available attributes on the CrawlResult object.
+
+**Purpose:** Discover what data is available after crawling a page.
+
+**Usage:**
+```bash
+python src/utilities/inspect_attributes.py
+```
+
+**Example Output:**
+```
+============================================================
+CrawlResult Attribute Inspection for: https://example.com
+============================================================
+Total Attributes Found: 0
+
+Key Attributes Summary:
+  success        : True
+  markdown       : 166 characters
+  html           : <!DOCTYPE html>...
+  links          : 1 total links
+  media          : 0 media items
+  metadata       : {'title': 'Example Domain', ...}
+  status_code    : 200
+============================================================
+```
+
+### When to Use These Utilities
+
+Use `inspect_links.py` when:
+- You want to understand link extraction structure
+- You need to debug link filtering issues
+- You're learning how Crawl4AI categorizes links
+
+Use `inspect_attributes.py` when:
+- You're exploring CrawlResult capabilities
+- You need to know what data is available
+- You're debugging attribute access issues
+
+**Note:** These are **development utilities** for debugging and exploration. They are not part of the main educational content but can help you understand Crawl4AI's behavior better. For learning Crawl4AI, start with the main concept examples in `src/module01/`.
 
 ## Assessment Overview
 
